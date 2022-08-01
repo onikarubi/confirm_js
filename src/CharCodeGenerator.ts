@@ -19,8 +19,6 @@ export class CharCodeGenerator {
 
     if (this.inputNumber) {
       this.listAlphabet.push(this.inputNumberGenerate());
-    } else {
-      return;
     }
   }
 
@@ -51,6 +49,10 @@ export class CharCodeGenerator {
       alphabet += String.fromCharCode(this.charCodeA + i);
     }
     return this.setAlphabetConfig(alphabet);
+  }
+
+  private generateRandomAlphabet(): string {
+    return '';
   }
 
   private inputNumberGenerate(): string {
